@@ -1,0 +1,20 @@
+[project]
+name = "kaya-pcd-provider-mock"
+version = "0.1.0"
+description = "Mock of the Guardian PCD provider search, used by the WM5-MSG002 PCD dflows until real access exists"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.30",
+    "pydantic>=2.7",
+]
+
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pcd_provider_mock"]
+
+[tool.setuptools.package-data]
+pcd_provider_mock = ["data/*.json"]

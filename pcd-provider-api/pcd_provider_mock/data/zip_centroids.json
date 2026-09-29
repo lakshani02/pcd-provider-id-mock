@@ -1,0 +1,10 @@
+{
+  "75201": {"city": "Dallas", "state": "TX", "lat": 32.7876, "lon": -96.7994},
+  "75001": {"city": "Addison", "state": "TX", "lat": 32.9600, "lon": -96.8386},
+  "76102": {"city": "Fort Worth", "state": "TX", "lat": 32.7555, "lon": -97.3308},
+  "77002": {"city": "Houston", "state": "TX", "lat": 29.7560, "lon": -95.3650},
+  "78701": {"city": "Austin", "state": "TX", "lat": 30.2711, "lon": -97.7437},
+  "79843": {"city": "Marfa", "state": "TX", "lat": 30.3094, "lon": -104.0206},
+  "10001": {"city": "New York", "state": "NY", "lat": 40.7506, "lon": -73.9972},
+  "82001": {"city": "Cheyenne", "state": "WY", "lat": 41.1400, "lon": -104.8202}
+}

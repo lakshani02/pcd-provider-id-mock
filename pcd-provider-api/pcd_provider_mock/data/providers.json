@@ -1,0 +1,65 @@
+[
+  {
+    "pcd_id": "PCD0012345",
+    "provider_name": "Dr. Maria Lopez",
+    "practice_name": "Uptown Family Dental",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "2501 N Harwood St", "city": "Dallas", "state": "TX", "zip": "75201"},
+    "lat": 32.7905, "lon": -96.8040
+  },
+  {
+    "pcd_id": "PCD0012346",
+    "provider_name": "Dr. James Chen",
+    "practice_name": "Addison Smiles",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "4950 Belt Line Rd", "city": "Addison", "state": "TX", "zip": "75001"},
+    "lat": 32.9570, "lon": -96.8300
+  },
+  {
+    "pcd_id": "PCD0012400",
+    "provider_name": "Dr. Priya Raman",
+    "practice_name": "Dallas Orthodontic Group",
+    "specialty": "Orthodontist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "1900 McKinney Ave", "city": "Dallas", "state": "TX", "zip": "75201"},
+    "lat": 32.7920, "lon": -96.8010
+  },
+  {
+    "pcd_id": "PCD0023456",
+    "provider_name": "Dr. Robert Hayes",
+    "practice_name": "Sundance Dental Care",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "400 Main St", "city": "Fort Worth", "state": "TX", "zip": "76102"},
+    "lat": 32.7520, "lon": -97.3290
+  },
+  {
+    "pcd_id": "PCD0034567",
+    "provider_name": "Dr. Angela Brooks",
+    "practice_name": "Downtown Houston Dental",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "1200 Travis St", "city": "Houston", "state": "TX", "zip": "77002"},
+    "lat": 29.7580, "lon": -95.3630
+  },
+  {
+    "pcd_id": "PCD0045678",
+    "provider_name": "Dr. Samuel Ortiz",
+    "practice_name": "Capitol Dental Associates",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "800 Congress Ave", "city": "Austin", "state": "TX", "zip": "78701"},
+    "lat": 30.2680, "lon": -97.7420
+  },
+  {
+    "pcd_id": "PCD0056789",
+    "provider_name": "Dr. Hannah Weiss",
+    "practice_name": "Chelsea Dental Studio",
+    "specialty": "Primary Care Dentist",
+    "plan_types": ["Managed Dental Care (DHMO/Prepaid)"],
+    "address": {"line1": "350 W 31st St", "city": "New York", "state": "NY", "zip": "10001"},
+    "lat": 40.7480, "lon": -73.9960
+  }
+]

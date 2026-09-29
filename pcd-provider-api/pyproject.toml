@@ -2,7 +2,7 @@
 name = "kaya-pcd-provider-mock"
 version = "0.1.0"
 description = "Mock of the Guardian PCD provider search, used by the WM5-MSG002 PCD dflows until real access exists"
-requires-python = ">=3.13"
+requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115",
     "uvicorn[standard]>=0.30",

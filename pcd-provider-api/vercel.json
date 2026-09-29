@@ -1,10 +1,12 @@
 {
-  "functions": {
-    "api/index.py": {
-      "includeFiles": "pcd_provider_mock/data/**"
+  "builds": [
+    {
+      "src": "api/index.py",
+      "use": "@vercel/python",
+      "config": { "includeFiles": "pcd_provider_mock/data/**" }
     }
-  },
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/api/index" }
+  ],
+  "routes": [
+    { "src": "/(.*)", "dest": "api/index.py" }
   ]
 }

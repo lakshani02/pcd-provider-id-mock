@@ -37,22 +37,20 @@ def health() -> dict[str, str]:
 def find_pcd_providers(
     zip_code: Annotated[str, Query(description="Employee's home zip code; ZIP+4 is accepted")],
     radius_miles: Annotated[int, Query(ge=1, le=250)] = DEFAULT_RADIUS_MILES,
-    specialty: str = PRIMARY_CARE_DENTIST,
-    plan_type: str = DHMO_PLAN_TYPE,
 ) -> SearchResponse:
     zip5 = zip_code.strip()[:5]
     if not (len(zip5) == 5 and zip5.isdigit()):
         raise HTTPException(status_code=422, detail="zip_code must be a 5-digit US zip code")
 
-    providers = search_providers(zip5, radius_miles, specialty, plan_type)
+    providers = search_providers(zip5, radius_miles, PRIMARY_CARE_DENTIST, DHMO_PLAN_TYPE)
     # An unknown zip is a data problem, not "no dentist nearby": it must not
     # turn into the service-area notice.
     if providers is None:
         raise HTTPException(status_code=404, detail="zip code %s is not in the mock data" % zip5)
 
     return SearchResponse(
-        search=SearchCriteria(plan_type=plan_type, zip_code=zip5,
-                              radius_miles=radius_miles, specialty=specialty),
+        search=SearchCriteria(plan_type=DHMO_PLAN_TYPE, zip_code=zip5,
+                              radius_miles=radius_miles, specialty=PRIMARY_CARE_DENTIST),
         found=bool(providers),
         count=len(providers),
         pcd_ids=[p.pcd_id for p in providers],

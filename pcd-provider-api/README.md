@@ -19,8 +19,9 @@ deployment. Nothing in `src/` imports it.
 |---|---|---|---|
 | `zip_code` | yes | | 5 digits; ZIP+4 (`75201-1234`) is accepted |
 | `radius_miles` | no | `50` | 1 to 250 |
-| `specialty` | no | `Primary Care Dentist` | |
-| `plan_type` | no | `Managed Dental Care (DHMO/Prepaid)` | |
+
+The plan type (Managed Dental Care (DHMO/Prepaid)) and specialty (Primary Care Dentist) are
+fixed; the response echoes them under `search`.
 
 Response (nearest first):
 
